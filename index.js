@@ -1,10 +1,8 @@
 function isPalindrome(word) {
-  // Write your algorithm here
-}
-
-/* 
-  Add your pseudocode here
-*/
+  let length = word.length
+  let start =  word.substring(0, Math.floor(length/2)).toLowerCase()
+  let end = word.substring(length - Math.floor(length/2)).split('').reverse().join('')
+   return (start === end) }
 
 /*
   Add written explanation of your solution here
